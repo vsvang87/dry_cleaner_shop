@@ -46,7 +46,7 @@ body {
 .nav-links li a:hover {
   color: var(--third-color);
   border-bottom: 1px solid var(--third-color);
-  transition: 0.3 ease;
+  transition: 0.6 ease;
 }
 
 /*Toggle Navigation Button*/
@@ -106,6 +106,13 @@ body {
   align-items: center;
   text-align: center;
 }
+.service-contact-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: var(--second-color);
+}
 .box-info {
   display: flex;
   flex-direction: column;
@@ -114,7 +121,7 @@ body {
   min-height: 40vh;
 }
 .two {
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
 }
 
 /* footer */
@@ -147,6 +154,18 @@ body {
 }
 .services li {
   list-style-type: none;
+}
+.service-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 40vh;
+}
+/* About Page */
+.main-about-page {
+  display: flex;
+  justify-content: space-around;
 }
 /* Media Query */
 @media (max-width: 870px) {
