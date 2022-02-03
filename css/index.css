@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,400&family=Montserrat:wght@200&display=swap");
 * {
   padding: 0px;
   margin: 0px;
@@ -7,84 +7,185 @@
 :root {
   --first-color: #1b435d;
   --second-color: #e3e3e3;
-  --third-color: #ff895d;
+  --third-color: #dc2f2f;
   --fourth-color: #fafafa;
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.5rem;
+  font-family: "Lato", sans-serif;
+  font-size: 1.3rem;
   line-height: 2rem;
 }
+/*Navigation Bar*/
 .navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  background-color: var(--first-color);
+  background-color: var(--fourth-color);
   color: var(--fourth-color);
   min-height: 80px;
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
 }
-
-.nav-links li {
+.navbar .logo {
+  padding-left: 30px;
+}
+.nav-links ul {
+  display: flex;
+}
+.nav-links ul li {
   list-style-type: none;
-  display: inline-block;
-  padding: 0px 10px;
-  margin: 0px 10px;
+  padding: 30px;
 }
 .nav-links li a {
-  color: var(--fourth-color);
+  color: var(--first-color);
   text-decoration: none;
+  font-weight: 600;
 }
 .nav-links li a:hover {
   color: var(--third-color);
   border-bottom: 1px solid var(--third-color);
+  transition: 0.3 ease;
+}
+
+/*Toggle Navigation Button*/
+.toggle-button {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: absolute;
+  top: 2.5rem;
+  right: 1.2rem;
+  height: 20px;
+  width: 35px;
+  display: none;
+}
+.toggle-button .bars {
+  background-color: var(--first-color);
+  border-radius: 20px;
+  height: 4px;
+  width: 100%;
 }
 /* Main Container */
 .container {
   display: flex;
 
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 40px 20px;
   margin: 40px 10px;
 }
-.inner-container {
-  padding: 40px 40px;
-  margin: 20px 20px;
-}
+
 .image {
-  width: 40vw;
-  height: 70vh;
+  width: 25rem;
+  height: 25rem;
 }
 
 /* mid-section */
-.mid-container {
+.section {
   display: flex;
   justify-content: space-around;
-  flex-direction: row;
   align-items: center;
-  margin: 40px 20px;
-  padding: 50px 20px;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  background-color: var(--second-color);
+  height: 90vh;
 }
 .mid-section {
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+/* Contact Section */
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.box-info {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  min-height: 40vh;
 }
+.two {
+  padding-bottom: 2rem;
+}
+
 /* footer */
 .footer {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--first-color);
-  min-height: 80px;
+  height: 4rem;
   color: var(--second-color);
 }
 
-/*Media Query */
-@media all and (max-width: 1000px) {
-  .image {
-    flex-wrap: wrap;
+/* Service Page*/
+.service-main-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 3rem;
+  line-height: 2rem;
+}
+.service-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 50rem;
+}
+.info-container {
+  margin: 2rem 2rem;
+}
+.services li {
+  list-style-type: none;
+}
+/* Media Query */
+@media (max-width: 870px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+  .toggle-button {
+    display: flex;
+  }
+  .nav-links {
+    display: none;
+    width: 100%;
+  }
+  .nav-links ul {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  .nav-links ul li {
+    padding: 10px;
+  }
+  .img-box .image {
+    width: 320px;
+    height: 320px;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  /*inner-container*/
+  .inner-container {
+    text-align: center;
+  }
+  .contact-info {
+    flex-direction: column;
+    text-align: center;
   }
 }

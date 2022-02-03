@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Font Awesome Icon Link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--Css Link-->
     <link rel="stylesheet" href="/css/index.css" />
     <title>Home Page</title>
   </head>
@@ -19,12 +25,20 @@
             height="100px"
         /></a>
       </div>
+      <!--Toggle Button-->
+      <a href="#" class="toggle-button">
+        <span class="bars"></span>
+        <span class="bars"></span>
+        <span class="bars"></span>
+      </a>
       <!--Nav-links-->
-      <ul class="nav-links">
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/services.html">Services</a></li>
-        <li><a href="/prices.html">Prices</a></li>
-      </ul>
+      <div class="nav-links">
+        <ul>
+          <li><a href="/index.html" class="active">Home</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/about.html">About</a></li>
+        </ul>
+      </div>
     </header>
 
     <!--Main Section-->
@@ -32,16 +46,15 @@
       <div class="inner-container">
         <h3>Address</h3>
         <p>3171 S. 76th St</p>
-        <p>Milwaukee, Wi 53208</p>
+        <p>Milwaukee, Wi 53219</p>
         <br />
         <h3>Phone</h3>
         <p>414-328-1944</p>
         <br />
-        <h3>Our Goal</h3>
-        <p>
-          To bring the best care for your clothing and fabrics with technology
-          and alterations by our professional tailor.
-        </p>
+        <h3>Hours</h3>
+        <p>Monday - Friday: 7am - 7pm</p>
+        <p>Saturday: 8am - 5pm</p>
+        <p>Sunday: Closed</p>
       </div>
       <div class="img-box">
         <img
@@ -51,21 +64,17 @@
         />
       </div>
     </main>
-    <!--Mid Section-->
-    <div class="info">
-      <h3>
-        Providing Dry Cleaning, Alterations, Tailoring, and More Since 1990
-      </h3>
-    </div>
-    <section class="mid-container">
+
+    <section class="section">
       <div class="mid-section">
         <img
-          src="/images/ShopClothesRack.JPG"
-          alt="clothing rack"
-          width="320px"
-          height="320px"
+          src="/images/ClothesRack.jpg"
+          alt="rack of clothes"
+          width="250px"
+          height="200px"
         />
-        <h4>Dry Cleaning</h4>
+        <h3>Dry Cleaning</h3>
+        <br />
         <p>
           Get your shirt, dress, skirt, pants, coat, suit, tie, or any other
           item dry cleaned from Sun's Family Dry Cleaners.
@@ -73,19 +82,43 @@
       </div>
       <div class="mid-section">
         <img
-          src="/images/AlterationZippers.jpg"
-          alt="alteration image"
-          width="320px"
-          height="320px"
+          src="/images/weddingDress.jpg"
+          alt="wedding dress"
+          width="250px"
+          height="200"
         />
-        <h4>Alterations</h4>
+        <h3>Wedding Dresses</h3>
+        <br />
         <p>
-          Whether your clothes need to be altered for size or needs to be
-          repaired, bring it to Sun's Family Dry Cleaners. We provide hemming,
-          mending, sewing, and other services. Get dependable clothing
-          alterations for men, women, and children. Get in touch with our team
-          for more information.
+          Let us preserve your wedding dress. Before the wedding, we can alter
+          for the bride and wedding party.
         </p>
+      </div>
+      <div class="mid-section">
+        <img
+          src="/images/MenShirt.jpg"
+          alt="men dress shirt"
+          width="250px"
+          height="200px"
+        />
+        <h3>Men's Shirts</h3>
+        <br />
+        <p>
+          Get your shirt cleaned for only $1.95. There is no extra charge for
+          starch or for button repair (not valid with other offers).
+        </p>
+      </div>
+    </section>
+    <!--Contact Section-->
+    <section class="contact-info">
+      <div class="box-info one">
+        <h4>Visit Us</h4>
+        <p>Sun's Family Dry Cleaners</p>
+        <p>3171 S 76th S Milwaukee , WI 53219</p>
+      </div>
+      <div class="box-info two">
+        <h4>Contact Us</h4>
+        <p>Phone: (414) 328-1944</p>
       </div>
     </section>
     <!--Footer-->
