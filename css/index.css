@@ -42,11 +42,11 @@ body {
   color: var(--first-color);
   text-decoration: none;
   font-weight: 600;
+  transition: 0.6 ease;
 }
 .nav-links li a:hover {
   color: var(--third-color);
   border-bottom: 1px solid var(--third-color);
-  transition: 0.6 ease;
 }
 
 /*Toggle Navigation Button*/
@@ -78,15 +78,24 @@ body {
 }
 
 .image {
-  width: 25rem;
+  width: 50vw;
   height: 25rem;
+}
+.img-box p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-top: 2rem;
+  text-transform: uppercase;
 }
 .home-contact-info {
   background-color: #fafafa;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   text-align: center;
+}
+.box-info {
+  padding: 0 3rem;
 }
 
 /* mid-section */
@@ -111,17 +120,23 @@ body {
   align-items: center;
   padding: 2rem;
 }
+@media (max-width: 740px) {
+  .home-contact-info {
+    flex-direction: column;
+  }
+}
 /* Contact Section */
 .contact-info {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   text-align: center;
   background-color: var(--second-color);
+  padding: 0 3rem;
 }
 .service-contact-info {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   text-align: center;
   background-color: var(--second-color);
@@ -135,6 +150,11 @@ body {
 }
 .two {
   padding-bottom: 1.5rem;
+}
+@media (max-width: 740px) {
+  .service-contact-info {
+    flex-direction: column;
+  }
 }
 
 /* footer */
@@ -174,6 +194,12 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 40vh;
+  padding: 0 3rem;
+}
+@media (max-width: 850px) {
+  .service-container {
+    text-align: center;
+  }
 }
 /* About Page */
 .main-about-page {
@@ -190,6 +216,16 @@ body {
   padding: 2rem;
   margin-top: 2rem;
 }
+.cf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--second-color);
+  height: 40vh;
+}
+.cf-box {
+  padding: 0 3rem;
+}
 .about-box {
   padding: 2rem;
 }
@@ -203,7 +239,6 @@ body {
     flex-direction: column;
     align-items: flex-start;
   }
-
   .container {
     flex-direction: column;
   }
@@ -223,8 +258,7 @@ body {
     padding: 10px;
   }
   .img-box .image {
-    width: 320px;
-    height: 320px;
+    width: 100%;
   }
   .nav-links.active {
     display: flex;
@@ -235,6 +269,20 @@ body {
   }
   .contact-info {
     flex-direction: column;
+    text-align: center;
+  }
+  /* About page */
+  .cf {
+    flex-direction: column;
+  }
+  .cf-box {
+    text-align: center;
+    padding: 1.2rem 0;
+  }
+  .about-box-info {
+    padding: 3rem 0;
+  }
+  .about-container {
     text-align: center;
   }
 }

@@ -1,6 +1,7 @@
-let toggleButton = document.getElementsByClassName("toggle-button")[0];
-let navLinks = document.getElementsByClassName("nav-links")[0];
+const myArr = [2, 3, 4, 5, 6];
+let total = 0;
 
-toggleButton.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-});
+for (let i = 0; i < myArr.length; i++) {
+  total += myArr[i];
+}
+console.log(total);
