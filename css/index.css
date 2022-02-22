@@ -163,8 +163,11 @@ body {
   justify-content: center;
   align-items: center;
   background-color: var(--first-color);
-  height: 4rem;
+  height: 5rem;
   color: var(--second-color);
+}
+.footer .copyright p {
+  font-size: 1rem;
 }
 
 /* Service Page*/
@@ -232,7 +235,11 @@ body {
 .about-list-items {
   list-style-type: none;
 }
-
+@media (max-width: 270px) {
+  .cf {
+    height: 60vh;
+  }
+}
 /* Media Query */
 @media (max-width: 870px) {
   .navbar {
